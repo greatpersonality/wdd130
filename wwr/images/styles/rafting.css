@@ -1,0 +1,155 @@
+/*GENERAL STYLING*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+select,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* hover effect on links */
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ---------- Header ---------- */
+.logo {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 8px 16px 0;
+}
+
+header nav {
+    margin: 8px 16px;
+    padding: 0 8px;
+    font-size: 0.8rem;
+}
+
+header nav li {
+    margin-left: 12px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    /* lets h1 and article sit on top of the image */
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Title bar across the top of the hero image */
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    /* was 130px - this made it a small box */
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/* Text box across the bottom of the hero image */
+.hero article {
+    position: absolute;
+    /* this was missing - article was below the image */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: #fff;
+    overflow: hidden;
+    /* keeps the floated image inside the box */
+}
+
+.hero img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 12px;
+}
+
+/* ---------- Section headings (History, Adventure Awaits You!) ---------- */
+section h2 {
+    margin: 24px 0 8px;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+    border-bottom: 4px solid var(--accent2-color);
+
+}
+
+/* ---------- Footer ---------- */
+footer {
+    margin-top: 24px;
+    border-top: 1px solid #ccc;
+    border-top: 2px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 8px 16px 0;
+    padding: 0 8px;
+    font-size: 0.75rem;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 8px;
+    margin: 4px 16px 16px;
+    padding: 0 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    /* icons had no size, so they were huge */
+    height: 30px;
+}
