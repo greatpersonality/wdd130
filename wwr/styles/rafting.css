@@ -1,4 +1,3 @@
-/*GENERAL STYLING*/
 * {
     margin: 0;
     padding: 0;
@@ -106,7 +105,7 @@ h1 {
     /* keeps the floated image inside the box */
 }
 
-.hero img {
+.hero article img {
     float: right;
     width: 125px;
     height: auto;
