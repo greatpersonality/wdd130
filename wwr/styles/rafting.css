@@ -214,3 +214,174 @@ footer p {
     width: 30px;
     height: 30px;
 }
+
+/* =====================================================
+   CONTACT PAGE (contact.html)
+   Paste this at the bottom of styles/rafting.css.
+   Everything above (header, nav, footer, section boxes,
+   h2 underline) is reused as-is.
+   ===================================================== */
+
+/* Page title + address block */
+main > h1 {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 8px 0 12px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+/* Map (left) | Form (right) */
+.contact-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.map {
+    flex: 1;
+    width: 50%;
+    height: 300px;
+    border: 1px solid var(--accent1-color);
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+
+/* Name / Email: label left, input right */
+.contact-form .field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-form .field label {
+    width: 60px;
+}
+
+/* Message goes label-on-top */
+.contact-form .field:has(textarea) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+}
+
+.contact-form .field:has(textarea) label {
+    width: auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    flex: 1;
+    padding: 6px 8px;
+    font-family: var(--body-font);
+    font-size: 0.85rem;
+    color: var(--accent1-color);
+    border: 1px solid var(--accent1-color);
+    border-radius: 3px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--accent2-color);
+    border-color: var(--primary-color);
+}
+
+/* Message Purpose radios */
+.contact-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: none;
+    padding-left: 72px;
+    /* lines radios up under the inputs */
+    position: relative;
+}
+
+.contact-form legend {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    line-height: 1.2;
+}
+
+.contact-form fieldset label,
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    accent-color: var(--primary-color);
+}
+
+/* Button */
+.contact-form button {
+    padding: 8px;
+    font-family: var(--body-font);
+    font-size: 0.85rem;
+    color: var(--accent1-color);
+    background-color: #eee;
+    border: 1px solid var(--accent1-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* We Are Here to Serve You: 3 employee profiles */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.employees img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto 6px;
+    border-radius: 50%;
+    border: 2px solid var(--accent2-color);
+}
+
+.employees figcaption {
+    font-size: 0.85rem;
+}
