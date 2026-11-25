@@ -29,58 +29,58 @@
         <address class="contact-info">
             <p>250 river plate street</p>
             <p>Russel, Atlanta</p>
-            <p><a href="tel:+234 08027445367">+234 08027445367</a></p>
+            <p><a href="tel:+2348027445367">+23408027445367</a></p>
             <p><a href="mailto:info@blueoceanrafting.com">info@blueoceanrafting.com</a></p>
         </address>
 
-        <section class="contact-section">
+        <div class="contact-section">
             <iframe class="map" title="Map showing the location of Blue Ocean Rafting Adventure" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6723.7079927775385!2d33.16416107145278!3d0.4809815710122278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1795630879267!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <form action="#" method="post" class="contact-form">
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Placeholder" required>
+            </div>
 
-            <form action="#" method="post" class="contact-form">
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Placeholder" required>
-                </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Placeholder" required>
+            </div>
 
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Placeholder" required>
-                </div>
+            <fieldset>
+                <legend>Message Purpose</legend>
+                <label><input type="radio" id="purpose-general" name="purpose" value="general" checked> General Inquiry</label>
+                <label><input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Message Purpose</legend>
-                    <label><input type="radio" id="purpose-general" name="purpose" value="general" checked> General Inquiry</label>
-                    <label><input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
-                </fieldset>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type here" required></textarea>
+            </div>
 
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Type here" required></textarea>
-                </div>
+            <label class="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                Please Subscribe me to the monthly newsletter
+            </label>
 
-                <label class="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter" checked>
-                    Please Subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Get in Touch!</button>
-            </form>
-        </section>
+            <button type="submit">Get in Touch!</button>
+        </form>
+        </>
 
         <section class="serve">
             <h2>We Are Here to Serve You</h2>
             <div class="employees">
                 <figure>
-                    <img src="images/employees_15_photo2_optimized_100.jpeg" alt="Employee profile photo 1">
+                    <img src="images/employees-15.jpeg" alt="Employee profile photo 1">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employees_20_photo3_optimized_100.jpeg" alt="Employee profile photo 2">
+                    <img src="images/employees-20.jpeg" alt="Employee profile photo 2">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee.png" alt="Employee profile photo 3">
+                    <img src="images/employees-10.jpeg" alt="Employee crew guide photo 3">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
             </div>
