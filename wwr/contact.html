@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Blue Ocean Rafting Adventure</title>
-    <meta name="description" content="Contact Blue Ocean Rafting Adventure for trip inquiries, reservations, customer care support, and river location details.">
+    <meta name="description" content="Contact Blue Ocean Rafting Adventure for trip inquiries, reservations, customer support, and river location details.">
     <meta name="author" content="Obinna George Ibe">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/blueocean.jpeg" alt="Blue Ocean Rafting Adventure logo" class="logo">
+        <img src="images/blueocean.jpeg" alt="Blue Ocean Rafting Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,63 +24,80 @@
     </header>
 
     <main>
-        <h1>Blue Ocean Rafting Adventure</h1>
+        <!-- Centered Company Information Header -->
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+2348027445367 | +2348027445367</p>
+            <p>info@whitewater.com</p>
+        </section>
 
-        <address class="contact-info">
-            <p>250 river plate street</p>
-            <p>Russel, Atlanta</p>
-            <p><a href="tel:+2348027445367">+23408027445367</a></p>
-            <p><a href="mailto:info@blueoceanrafting.com">info@blueoceanrafting.com</a></p>
-        </address>
-
-        <div class="contact-section">
-            <iframe class="map" title="Map showing the location of Blue Ocean Rafting Adventure" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6723.7079927775385!2d33.16416107145278!3d0.4809815710122278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1795630879267!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-        <form action="#" method="post" class="contact-form">
-            <div class="field">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Placeholder" required>
+        <!-- Section 1: Google Map (Left) & Contact Form (Right) -->
+        <section class="contact-box">
+            <div class="map">
+                <!-- Paste your Google Maps embed link inside src below -->
+                <iframe src="" allowfullscreen=https://maps.app.goo.gl/VPzEvShKNMbkQYEb7?g_st=aw"" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Blue Ocean Rafting Location Map">
+                </iframe>
             </div>
 
-            <div class="field">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Placeholder" required>
-            </div>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-item">
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Placeholder" required>
+                </div>
 
-            <fieldset>
-                <legend>Message Purpose</legend>
-                <label><input type="radio" id="purpose-general" name="purpose" value="general" checked> General Inquiry</label>
-                <label><input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
-            </fieldset>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Placeholder" required>
+                </div>
 
-            <div class="field">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Type here" required></textarea>
-            </div>
+                <div class="form-item">
+                    <span class="purpose-label">Message Purpose</span>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                </div>
 
-            <label class="newsletter">
-                <input type="checkbox" id="newsletter" name="newsletter" checked>
-                Please Subscribe me to the monthly newsletter
-            </label>
+                <div class="form-column">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type here" required></textarea>
+                </div>
 
-            <button type="submit">Get in Touch!</button>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
+                </div>
 
-        </form>
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
 
-        <section class="serve">
+        <!-- Section 2: Employee Profiles (3-Column Grid with Figure & Figcaption) -->
+        <section class="employees">
             <h2>We Are Here to Serve You</h2>
-            <div class="employees">
+            <div class="employee-grid">
                 <figure>
-                    <img src="images/employees-15.jpeg" alt="Employee profile photo 1">
+                    <img src="images/employees-20.jpeg" alt="Employee profile photo 1">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employees-20.jpeg" alt="Employee profile photo 2">
+                    <img src="images/employee2.jpg" alt="Employee profile photo 2">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employees-10.jpeg" alt="Employee crew guide photo 3">
+                    <img src="images/employee3.jpg" alt="Employee profile photo 3">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
             </div>
@@ -88,14 +105,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 &#128166; Blue Ocean Rafting Adventure &#128166; Obinna George Ibe</p>
+        <p>&copy; 2026 | Blue Ocean Rafting Adventure | Obinna George Ibe</p>
         <nav class="socialmedia">
-            <a href="https://www.facebook.com/"><img src="images/facebook-square.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
         </nav>
     </footer>
-
 </body>
 
 </html>
